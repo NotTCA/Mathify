@@ -10,7 +10,7 @@ export default function App() {
     const a = Math.floor(Math.random() * 15) + 1;
     const b = Math.floor(Math.random() * 15) + 1;
     const operation = ["*", "+", "/", "-"][Math.floor(Math.random() * 4)];
-    const answer = eval(a + operation + b);
+    const answer = Math.round(eval(a + operation + b) * 100) / 100;
     if (answer === notThisOne) return question(notThisOne);
     return {
       a,
