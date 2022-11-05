@@ -53,6 +53,7 @@ export default function App() {
       <div className="p-3" />
       <input
         type="number"
+        step="any"
         className={`outline outline-2 ${
           lost ? "outline-red-600" : "outline-black"
         } focus:outline-2 rounded-full text-center text-xl py-2 w-48`}
